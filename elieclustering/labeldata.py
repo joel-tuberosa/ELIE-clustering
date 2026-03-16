@@ -25,7 +25,7 @@ class Label(object):
     
     keys = ("ID", "text")
     
-    def __init__(self, ID=None, text=None):
+    def __init__(self, ID=None, text=None, **kwargs):
         '''
         Instantiate a new Label object from a unique identifier and a 
         transcript.
@@ -37,6 +37,11 @@ class Label(object):
             
             text : str
                 Any text, ideally a label transcript.
+            
+            **kwargs
+                Extra keyword arguments are ignored. This allows Label 
+                objects to be created from JSON data with additional 
+                fields (e.g., confidence scores).
         '''
         
         self._data = {"ID": ID, "text": text}
