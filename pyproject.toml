@@ -26,7 +26,8 @@ dependencies = [
   "levenshtein",
   "scikit-learn-extra @ git+https://github.com/TimotheeMathieu/scikit-learn-extra@main#egg=scikit-learn-extra",
   "kneed",
-  "geopy"
+  "geopy",
+  "leven"
 ]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
